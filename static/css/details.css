@@ -1,0 +1,24 @@
+.fb_share_link {
+padding-top: 2px;
+padding-right: 0pt;
+padding-bottom: 0pt;
+padding-left: 20px;
+height: 16px;
+background-color: transparent;
+background-image: url(https://static.thepiratebay.org/img/icons/fb_share.gif);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: left top;
+font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+font-size: 11px;
+text-align: left;
+}
+
+a.fb_share_link {
+color: #3b5998;
+text-decoration: none;
+}
+
+a:hover.fb_share_link  {
+text-decoration: underline;
+}

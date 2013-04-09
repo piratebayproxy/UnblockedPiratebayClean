@@ -1,0 +1,514 @@
+/*
+The Pirate Bay - main style sheet for thepiratebay.se
+*/
+
+/* HTML5 - set default style to new HTML5 elements (for compability with older browsers) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{ display: block; }
+
+
+/* GLOBAL
+***************************************************/
+body {
+	background: #fff;
+	margin: 10px;
+	font: 0.7em/1.3em Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* sprites */
+.sp {
+	background: url('static/img/latest.png') no-repeat;
+	display: inline-block;
+	height: 12px;
+	width: 11px;
+    margin: 0 0 -3px 0;
+}
+.dl-torrent {
+	background-position: -36px -111px;
+	margin: 0 3px -3px 0;
+}
+.dl-magnet {
+	background-position: -46px -111px;
+	margin: 0 3px -1px 0;
+	width: 13px;
+}
+.vip { background-position: -13px -99px; }
+.trus { background-position: -1px -99px; }
+.help { background-position: -25px -99px; }
+.admin, .mod, .smod {
+	height: 11px;
+	width: 28px;
+}
+.admin { background-position: 0 -87px; }
+.smod { background-position: -27px -87px; }
+.mod { background-position: -54px -87px; }
+.twitter {
+    background-position: -44px -123px;
+    height: 16px;
+    width: 16px;
+}
+#write_comment {
+	background-position: -25px -110px;
+	height: 10px;
+	margin: 0 4px -1px 0;
+}
+
+#tools {
+	max-width: 728px;
+	margin: 1em auto -1em auto;
+	text-align: right;
+	line-height: 30px;
+	clear: both;
+	overflow: hidden;
+}
+#tools form {
+	float: left;
+	background: #F6F1EE;
+	padding: 0px 5px;
+}
+#delete a { color: #f00; }
+#check a { color: #000; }
+#check a:hover, #checked { color: #090; }
+
+/* links */
+a, a:link, a:visited, a:focus {
+	color: #009;
+	text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+a:hover { border-bottom: 1px solid #009; } /* default link hover style */
+#icons a, h1 a:hover, .sp, tr a, #logo a { border-bottom: 0 !important } /* however, we dont want dotted links here.. */
+table a:hover { text-decoration: underline; }
+.download a:hover { text-decoration: none !important; border-color: #090; }
+
+img, img:hover { border-bottom: 0 !important; }
+/* tables */
+table {
+	border-collapse: collapse;
+	empty-cells: show
+}
+th {
+	border-right: 1px solid #fff;
+    padding: 4px;
+}
+td { padding: 4px; }
+
+
+/* lists */
+ul { list-style:none; }
+
+/* misc */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* forms */
+fieldset { border:0; }
+legend { display:none; }
+
+/* messages */
+#error {
+	border: 1px solid #F6F1EE;
+	border-width: 1px 0 1px 0;
+	color: #c00;
+	margin: 2em auto;
+	padding: 9px 20px;
+	color:#444;
+}
+#error span {
+	display:block;
+	font-weight: bold;
+	margin:3px 0 5px 0;
+	color: #a00;
+}
+#info {}
+
+/* headings */
+h1 {}
+h2 {
+	width: 98%;
+	background: #F6F1EE;
+	border-bottom: 1px solid #D2B9A6;
+	padding: 4px 0.5%;
+	clear: both;
+	font-size: 125%;
+}
+
+/* top navigation */
+#logo a
+{
+	background: url('static/img/latest.png') 0px 0px no-repeat;
+	height: 86px;
+	width: 82px;
+	margin: -12px 10px 0 0;
+	float: left;
+}
+#logo span { display: none; }
+header nav
+{
+	margin: -5px 0 0 -8px;
+	padding: 0;
+	float: left;
+}
+header nav ul
+{
+	padding: 0;
+	margin: 0;
+}
+header nav ul li
+{
+	float: left;
+	padding: 0 9px;
+	line-height: 11px;
+	border-right: 1px solid #333;
+}
+header nav ul li:last-child { border: 0; }
+
+/* top search */
+#topsearch
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#topsearch form>input { margin-bottom: 5px; }
+#topsearch label {
+    padding: 0;
+    margin: 0 5px 0 0;
+}
+#topsearch label input {
+	position: relative;
+	top: 5px;
+	margin: 0 3px 0 0;
+	vertical-align: top;
+}
+
+/* ads */
+.ads,
+.ads iframe {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	z-index: -999;
+}
+#top468 {
+	float: right;
+	margin: -15px 1em -25px 0;
+	width: 468px;
+}
+#right-sky,
+#left-sky {
+	margin-top: 2em;
+	width: 180px;
+}
+#right-sky { float: right; }
+#left-sky { float: left; }
+#right-sky iframe {
+    margin-left: 20px;
+    text-align: left;
+}
+#left-sky iframe {
+    margin-right: 20px;
+    text-align: right;
+    float: right;
+}
+#bottom728,
+#top728 {
+	margin: auto;
+	width: 728px;
+}
+
+/* footer */
+footer {
+    margin: 0em auto;
+	text-align: center;
+}
+footer #stats {
+	color: #666;
+	font-size: .9em;
+	clear: both;
+	margin: 2em 0;
+}
+.rss span, .kopimi span { display: none; }
+.rss {
+	background-position: 0px -124px;
+	width:16px;
+	height: 16px;
+}
+.kopimi {
+	background-position: -60px -111px;
+	width:21px;
+	height: 21px;
+	margin: 1em 0 0 0;
+}
+
+/* PAGE SPECIFIC
+***************************************************/
+
+/* front page */
+#fp {
+	display: block;
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+#fp h1 a {
+	background: url('static/img/tpb.jpg') no-repeat;
+	margin: 0 auto;
+	display: block;
+	border: 0;
+	width: 275px;
+	height: 295px;
+	outline: none !important;
+}
+#fp h1 a span { visibility: hidden; }
+
+#fp #bnr a {
+	height:205px;
+	width:205px;
+	position: absolute;
+	top:0;
+	right:0;
+    border: 0;
+}
+#fp #bnr img { border: 0; }
+#fp #navlinks { white-space: nowrap; }
+#fp #navlinks a { margin: 0 2px; }
+
+#fp #inp input {
+    padding: 3px;
+	width: 390px;
+}
+.https_form { background: url('static/img/icon-https.gif') no-repeat 100% 50% #ffffe0; }
+
+#fp #inp span {
+    width: 1em;
+	line-height:12px;
+	float:right;
+	font-size:9px;
+    position: absolute;
+    padding: 0 15px;
+}
+#fp #howdl a {
+    font-size: 13px;
+    line-height: 20px;
+    border: 0;
+}
+
+
+
+/* details & upload */
+#details,
+#upload {
+	background: #F6F1EE;
+	margin: 2em auto;
+	padding: 0 1.5em 0.5em 1.5em;
+	max-width: 625px;
+	/*max-width: 694px;*/
+	overflow: hidden;
+}
+#details h1, #upload h1 {
+	margin: 0 -1.5em;
+	padding: .4em 1em .6em 1.5em;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 0.07em;
+	background: #D2B9A6;
+	border-bottom: 1px solid #fff;
+}
+#details h1 span { float: right; }
+#details dl {
+	float: left;
+	margin: .9em 3%;
+	width: 43%;
+	clear: right;
+	line-height: 140%;
+}
+#details dt {
+	float: left;
+	font-weight: bold;
+	color: #7B563A;
+}
+#details #col1 dd { padding: 0 0 0 20%; }
+#details #col2 dd { padding: 0 0 0 30%; }
+#delete a, #check a, #checked, #edit a {
+	font-weight: bold;
+	padding: 3px 9px;
+	background: #D2B9A6;
+}
+#details #write_comment_div {
+	display: none;
+	text-align: right;
+	padding: 2em 0 0 0;
+	clear: both;
+}
+#details #write_comment_div textarea { resize: both; }
+#social {
+    padding: 10px 0;
+    float: left;
+    line-height:12px;
+}
+#social * {
+    float: left;
+    margin-right: 5px;
+    border: 0;
+}
+#social .flattr { float: right; }
+#details .download, #details #social {
+    clear: both;
+    width: 460px;
+}
+#details .download a {
+	font: bold 1em/2.5em Verdana;
+	color: #090;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+#details .download a:hover { text-decoration: underline; }
+#details .download a.dl-torrent { background-position: 0 -398px; }
+#details .download a.dl-magnet {
+    background-position: 0 -421px;
+    margin-left: 1em;
+}
+#details #nfo pre, #upload .nfo {
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #D2B9A6;
+	background: #fff;
+	width: 600px;
+	min-height: 50px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 11px;
+	line-height: .9em;
+	white-space: pre-wrap;
+    /*word-wrap: break-word; # works with most browsers, but is not valid anymore */
+    overflow-wrap: break-word;
+}
+#torrentpic {
+	float: right;
+	margin: 1em 1em 0 0;
+}
+#comments { font-size: 0.9em; }
+#comments header { margin: 1.5em 0 .3em 0; }
+#details #comments time { color: #BB967A; }
+#details #comments time:before { content: 'at '; }
+#details #comments time:after { content: ':'; }
+#details #comments div { background: #fff; }
+#comments h2 {
+	color: #7B563A;
+	background: none;
+	padding: 0;
+	border: 0;
+	margin: 1em 0;
+}
+
+/* upload */
+#upload table { width: 100%; }
+#upload td {
+	border-bottom: 1px dashed #E8DCD2;
+	padding: 0.7em 1em 0.9em 0;
+	width: 20%;
+}
+#upload tr:nth-last-child(-n+2) td { border:0; } /* no borders between and after descripton and submit on upload page */
+#upload td+td {
+	width: 70%;
+	border-color: #Efe3D9;
+}
+#upload label {
+	font-weight: bold;
+	color: #7B563A;
+}
+#upload #tname, #upload #torrent { width: 83.5%; }
+#upload .moreinfo {
+	font-size: 80%;
+	display: block;
+	position: absolute;
+}
+#upload select { width:200px; }
+#upload input#torrent  { width:300px; }
+#upload textarea.nfo {
+	overflow: auto;
+	resize: vertical;
+	margin-top: 10px;
+	min-height: 300px;
+}
+
+/* browse table */
+table#list {
+	width: 100%;
+	margin: 2em auto;
+	max-width: 999px;
+}
+table#list th {
+	background: #D2B9A6;
+	text-align: left;
+	height: 1em;
+	white-space: nowrap;
+}
+table#list th a { color: #000; }
+table#list tr { background: #F6F1EE; }
+table#list tr:hover { background: #fff; }
+.tar { text-align: right; } /* what's this again? */
+.tal { text-align: right; } /* what's this again? */
+#viewswitch { font-weight: normal; }
+#viewswitch a { font-weight: bold; }
+
+table#list span.has-cover {
+    background-position: 0 -111px;
+    width: 12px;
+}
+table#list span.has-comment { background-position: -13px -111px; }
+table#list a.dl-torrent span,
+table#list a.dl-magnet span,
+table#list span.has-comment span,
+table#list span.has-cover span { display: none; }
+table#list .dl-torrent { margin: 0 -1px -3px 0; }
+table#list .dl-magnet { margin: 0 -0px -2px 0; }
+
+
+
+/* forms */
+#login, #register, #recover {
+	margin: 0 auto 3em auto;
+	max-width: 330px;
+}
+.form input {
+    float: right;
+}
+.form input[type="submit"] {
+    margin-top: 0.5em;
+}
+.form_msg {
+    text-align: right;
+}
+
+/* settings (profile) */
+#settings table {
+    margin: 0 auto 3em auto;
+    border: 0px solid #333;
+}
+#settings table tr > * {
+    text-align: left;
+    padding: 0.2em 1em;
+}
+
+
+/* public profile */
+#pubpro {
+	border: 1px solid #333;
+	min-height: 300px;
+}
+#pubpro ul {
+	text-align: center;
+}
+#pubpro ul li {
+	float: left;
+	padding: 0 5px;
+}
+#pubpro #pic {
+	padding: 5px;
+	border: 1px solid #f4f4f4;
+	float: left;
+	clear: both;
+}
+

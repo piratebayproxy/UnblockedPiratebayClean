@@ -1,0 +1,26 @@
+From jocke@monomusic.se Sun Jul 18 08:05:11 2004
+Received: (qmail 6120 invoked by alias); 19 Jul 2004 11:49:50 -0000
+Received: (qmail 28433 invoked from network); 19 Jul 2004 11:49:47 -0000
+Received: from mail.onnet.se (HELO mail1.onnet.se) (195.17.28.27)
+  by ruda.dmz with SMTP; 19 Jul 2004 11:49:47 -0000
+Received: from radar (radar.onnet.se [195.17.28.30])
+	by mail1.onnet.se (8.12.10/8.12.10) with SMTP
+	id i6K7RMmQ017064 for <tracker-c2-34-44-0a-40fcc90c@prq.to>;
+	Tue, 20 Jul 2004 09:27:24 +0200 (MET DST)
+Received: From nic1.onnet.se ([195.17.28.28]) by radar (WebShield SMTP v4.5
+    MR1a P0803.345);
+	id 1090308436210; Tue, 20 Jul 2004 09:27:16 +0200
+Received: from jockeny (gw.monomusic.se [194.52.68.10])
+	by nic1.onnet.se (8.12.10/8.12.10) with SMTP
+	id i6K7RGrt025104 for <tracker-c2-34-44-0a-40fcc90c@prq.to>;
+	Tue, 20 Jul 2004 09:27:21 +0200 (MET DST)
+Date: Tue, 20 Jul 2004 09:31:53 +0200
+From: Jocke Norling <jocke@monomusic.se>
+To: tracker-c2-34-44-0a-40fcc90c@prq.to
+Subject: Advokat
+
+Vänligen ta bort BAO CD:n från er sida.
+
+Jocke/ Mono Music AB
+
+

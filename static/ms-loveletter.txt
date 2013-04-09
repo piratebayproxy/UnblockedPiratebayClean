@@ -1,0 +1,69 @@
+From: "Internet 2" <internet2@microsoft-antipiracy.com>
+Sent: Friday, February 20, 2004 10:15 AM
+Subject: Demand for Immediate Take Down - Notice of Infringing Activity - MS
+Ref. [snip]
+
+
+VIA EMAIL:
+
+Demand for Immediate Take-Down: Notice of Infringing Activity
+
+URL: http://tracker.piratbyran.org/torrents-details.php?id=2614,
+http://tracker.piratbyran.org/torrents-details.php?id=2969,
+http://tracker.piratbyran.org/, http://www.piratbyran.org/
+CASE #: [snip]
+
+20 February 2004
+
+Dear Sir or Madam,
+
+This letter serves as notification under the Digital Millennium Copyright
+Act, 17 U.S.C. § 512, or equivalent notice provisions of your local law,
+that content currently residing within your computer system infringes on the
+copyrights of Microsoft Corporation.  Moreover, the source code contains
+proprietary  trade secret information belonging to Microsoft.  I am
+authorized to act on behalf of Microsoft in this matter.
+
+The infringing material residing on your system is the source code for
+Windows 1998, Windows NT, and/or Windows 2000.  This source code,
+copyrighted by and proprietary to Microsoft, is on your system at the
+following location:
+
+http://tracker.piratbyran.org/torrents-details.php?id=2614,
+http://tracker.piratbyran.org/torrents-details.php?id=2969,
+http://tracker.piratbyran.org/, http://www.piratbyran.org/
+Posting of Microsoft's source code as described above is not authorized by
+Microsoft, any of its agents, or by law.  Pursuant to this notification, you
+should immediately take steps to locate and remove and/or disable access to
+the Microsoft source code that is on your system at the web address detailed
+above.  As a service provider, you may otherwise be liable for copyright
+infringement if, upon obtaining knowledge or awareness of infringing
+material being stored upon your network, you do not act expeditiously to
+remove, or disable access to, the material.  17 U.S.C. § 512(c).
+
+The information in this notification is accurate.  I swear under penalty of
+perjury that I am authorized to act on behalf of Microsoft in regard to its
+exclusive rights in the work(s) identified above that I believe has been and
+continues to be infringed as described above.
+
+We hereby give notice of these activities to you and request that you take
+expeditious action to remove or disable access to the material described
+above, and thereby prevent the illegal reproduction and distribution of this
+source code via your company's network.
+
+We appreciate your cooperation in this matter. Please advise us regarding
+what actions you take.
+
+Yours sincerely,
+
+James Young
+Internet Investigator
+
+for Microsoft Corporation
+One Microsoft Way
+Redmond, WA 98052
+United States of America
+
+E-mail: Internet1@microsoft-antipiracy.com
+
+

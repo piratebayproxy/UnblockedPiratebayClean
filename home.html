@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site</title>
+    <meta name="description" content="Download music, movies, games, software and much more. The Pirate Bay is the world's largest bittorrent tracker.">
+    <meta name="keywords" content="mp3, avi, bittorrent, piratebay, pirate bay, proxy, torrent, torrents, movies, music, games, applications, apps, download, upload, share, kopimi, magnets, magnet">
+	<!--[if lt IE 9]>
+        <link rel="stylesheet" href="/static/css5/ie.css">
+        <script src="/static/js/html5_for_ie.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/static/css5/main.css">
+</head>
+<body>
+<div id="fp">
+     <h1><a href="/blog" title=""><span></span></a></h1>
+    <nav id="navlinks">
+        <strong>Search Torrents</strong> |
+        <a href="?load=/browse" title="Browse Torrents">Browse Torrents</a> |
+        <a href="?load=/recent" title="Recent Torrents">Recent Torrents</a> |
+        <a href="?load=/tv" title="TV shows">TV shows</a> | 
+        <a href="?load=/music" title="Music">Music</a> |
+        <a href="?load=/top" title="Top 100">Top 100</a>
+    </nav>
+    <form name="q" method="get" action="search.php">
+        <p id="inp">
+            <input name="q" type="search" title="Pirate Search" placeholder="Pirate Search" autofocus required>
+        </p>
+        <p id="chb">
+            <label title="All" accesskey="a"><input id="all" onclick="setAll();" type="checkbox" checked>All</label>
+            <label title="Audio" accesskey="q"><input name="audio" id="audio" onclick="rmAll();" type="checkbox">Audio</label>
+            <label title="Video" accesskey="w"><input name="video" id="video" onclick="rmAll();" type="checkbox">Video</label>
+            <label title="Applications" accesskey="e"><input name="apps" id="apps" onclick="rmAll();" type="checkbox">Applications</label>
+            <label title="Games" accesskey="r"><input name="games" id="games" onclick="rmAll();" type="checkbox">Games</label>
+            <label title="Other" accesskey="y"><input name="other" id="other" onclick="rmAll();" type="checkbox">Other</label>
+        </p>
+        <p id="subm">
+            <input type="submit" title="Pirate Search" value="Pirate Search" accesskey="s">
+            <input type="submit" title="I'm Feeling Lucky" name="lucky" value="I'm Feeling Lucky">
+            <input type="hidden" name="page" value="0">
+            <input type="hidden" name="orderby" value="99">
+        </p>
+    </form>
+    <strong id="howdl"><a href="http://proxybay.info/" title="List of Pirate Bay proxies">More Pirate Bay Proxies</a></strong>
+	<br>
+    <strong id="howdl"><a href="http://proxybay.info/setup.html" title="Create your own proxy">Create your own proxy</a></strong>
+</div>
+<footer>
+    <nav>
+	<a href="?load=/about" rel="nofollow" title="About">About</a> | 
+	<a href="?load=/legal" rel="nofollow" title="Legal threats">Legal threats</a> | 
+	<a href="?load=/policy" rel="nofollow" title="Usage polic">Usage policy</a> | 
+	<a href="?load=/blog" title="Blog">Blog</a> | 
+	<br>
+	<a href="?load=/doodles" rel="nofollow" title="Doodles">Doodles</a> | 
+	<a href="?load=/searchcloud" title="Search Cloud">Search Cloud</a> | 
+	<a href="?load=/tags" title="Tag Cloud">Tag Cloud</a> | 
+	<a href="http://suprbay.org/" title="Forum" rel="nofollow" target="_blank">Forum</a> | 
+	<a href="http://bayfiles.com" title="Bayfiles" rel="nofollow" target="_blank">Bayfiles</a>
+	<br>
+	<a href="http://bayimg.com" title="BayImg" rel="nofollow" target="_blank">BayImg</a> | 
+	<a href="http://pastebay.com" title="PasteBay" rel="nofollow" target="_blank">PasteBay</a> | 
+	<a href="https://www.ipredator.se" title="IPREDator" rel="nofollow" target="_blank">IPREDator</a> | 
+	<a href="https://www.facebook.com/ThePirateBayWarMachine" rel="nofollow" title="Follow TPB on Facebook" target="_blank">Facebook</a>
+    </nav>
+    <div id="icons"><br/>
+        <a href="http://www.kopimi.com/kopimi" rel="nofollow" target="_blank" title="Kopimi" class="sp kopimi"><span>Kopimi</span></a><br/><br/>
+	</div>
+</footer>
+</body>
+</html>
