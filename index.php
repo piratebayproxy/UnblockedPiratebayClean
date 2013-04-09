@@ -14,7 +14,7 @@
   }
 
   include("includes/functions.php");
-  include("includes/dn.php");
+  include("includes/config.php");
   $loadurl = $get;
   $loadurl = "http://$domaintoproxy$loadurl";
   $loadurl = str_replace(" ", "+", $loadurl);

@@ -1,6 +1,6 @@
 <?php
   include("includes/functions.php");
-  include("includes/dn.php");
+  include("includes/config.php");
 	$id = $_POST['id'];
 	$page = $_POST['page'];
 	$pages = $_POST['pages'];

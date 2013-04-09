@@ -1,6 +1,6 @@
 <?php
   include("includes/functions.php");
-  include("includes/dn.php");
+  include("includes/config.php");
   $scriptname = $_SERVER['SCRIPT_NAME'];
   $loadurl = $_SERVER["REQUEST_URI"];
   $loadurl = str_replace("$scriptname", "http://$domaintoproxy/s/", $loadurl);

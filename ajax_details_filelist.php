@@ -1,6 +1,6 @@
 <?php
   include("includes/functions.php");
-  include("includes/dn.php");
+  include("includes/config.php");
 	$id = $_GET["id"];
 	$proxyx = "ajax_details_filelist.php?id=$id";
   $loadurl = "http://$domaintoproxy/$proxyx";
