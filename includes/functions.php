@@ -1,6 +1,6 @@
 <?php
 
-function remove_bloat($page){
+function remove_bloat($page, $footerCode){
 	//SearchFix
 	$page = str_replace("/s/","/search.php", $page);
 	//Fix static link
@@ -9,6 +9,8 @@ function remove_bloat($page){
 	$page = str_replace('href="/?load=magnet','href="magnet', $page);
 	$page = str_replace('href="/?load=http','href="http', $page);
 	$page = str_replace('<a href="/?load=/rss" class="rss" title="RSS"><img src="/static/img/rss_small.gif" alt="RSS" /></a>','',$page);
+  //Change CSS links
+	$page = str_replace('/css-new/','/css/', $page);
 	//Remove links that is not needed
 	$page = str_replace("<a href=\"/login\" title=\"Login\">Login</a> | ","", $page);
 	$page = str_replace("<a href=\"/register\" title=\"Register\">Register</a> | ","", $page);
@@ -18,6 +20,8 @@ function remove_bloat($page){
 	$page = str_replace("<div class=\"detailartist\"","<div class=\"detailartist\" style=\"display:none; visibility:hidden;\"", $page);
 	//Remove detailed artist info that doesnt work, temporary disable comment page switching
 	$page = str_replace("ajax_details_artinfo.php","blank.php", $page);
+  //Add footer code
+  $page = str_replace("</body>","$footerCode </body>", $page);
 	return $page;
 }
 
