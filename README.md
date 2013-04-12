@@ -3,6 +3,10 @@ UnblockedPiratebayClean
 
 This is a clean version of the popular 'unblockedpiratebay' php script
 
-Todo
-- Remove extra .htaccess files from /static/*
-- Add new static resources from TPB to /static/* (e.g. /css-new/)
+Simply uploaded it to your web hosting account to use
+
+Your web host will need to support PHP
+
+# Update April 12 2013
+
+You can add your own footer code by editing includes/config.php
