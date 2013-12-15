@@ -3,7 +3,7 @@ UnblockedPiratebayClean
 
 This is a clean version of the popular 'unblockedpiratebay' php script
 
-Simply uploaded it to your web hosting account to use
+Simply upload it to your web hosting account to use
 
 Your web host will need to support PHP
 
