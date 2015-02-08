@@ -1,13 +1,13 @@
 <?php
 
-function remove_bloat($page, $footerCode){
+function remove_bloat($page, $footerCode = ''){
 	//SearchFix
 	$page = str_replace("/s/","/search.php", $page);
 	//Fix static link
 	$page = str_replace('href="','href="/?load=', $page);
 	$page = str_replace('href="/?load=/static','href="static', $page);
 	$page = str_replace('href="/?load=magnet','href="magnet', $page);
-	$page = str_replace('href="/?load=http','href="http', $page);
+	$page = str_replace('href="/?load=https','href="https', $page);
 	$page = str_replace('<a href="/?load=/rss" class="rss" title="RSS"><img src="/static/img/rss_small.gif" alt="RSS" /></a>','',$page);
 	 //Change CSS links
 	$page = str_replace('/css-new/','/css/', $page);
@@ -38,23 +38,20 @@ function get_data($url)
 	curl_setopt($ch,CURLOPT_MAXCONNECTS,320);
 	curl_setopt($ch,CURLOPT_TIMEOUT,30);
 	curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,30);
-	$data = curl_exec($ch);	
+	$data = curl_exec($ch);
 	curl_close($ch);
 	return $data;
 }
 
 function search_curl($url)
 {
-	$ch = curl_init();
-	curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt ($ch, CURLOPT_URL, $url);
-	curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, 20);
-	curl_setopt($ch, CURLOPT_HEADER, true); // header will be at output
-	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'HEAD'); // HTTP request is 'HEAD'	
-	$data = curl_exec($ch);	
-	curl_close($ch);	
-	return $data;
-	
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+  curl_setopt($ch, CURLOPT_HEADER, 0);
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+  curl_setopt($ch, CURLOPT_URL, $url);
+  $data = curl_exec($ch);
+  curl_close($ch);
+  return $data;
 }
-
 ?>
