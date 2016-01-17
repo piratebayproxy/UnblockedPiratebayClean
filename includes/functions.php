@@ -4,6 +4,7 @@ function remove_bloat($page, $footerCode = ''){
   $page = str_replace('//thepiratebay.se','', $page);
   $page = str_replace('href="','href="/?load=', $page);
   $page = str_replace('src="/static/','src="/?load=/static/', $page);
+  $page = preg_replace('/<iframe.*src="\/ads\/.*iframe>/','', $page);
   $page = str_replace('href="/?load=http','href="http', $page);
   $page = str_replace('href="/?load=/static','href="/static', $page);
   $page = str_replace('href="/?load=magnet','href="magnet', $page);
