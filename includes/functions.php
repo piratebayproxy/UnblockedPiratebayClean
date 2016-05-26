@@ -1,7 +1,7 @@
 <?php
 function remove_bloat($page, $footerCode = ''){
   $page = str_replace("/s/","/search.php", $page);
-  $page = str_replace('//thepiratebay.se','', $page);
+  $page = str_replace('//thepiratebay.org','', $page);
   $page = str_replace('href="/','href="/?load=/', $page);
   $page = str_replace('src="/static/','src="/?load=/static/', $page);
   $page = preg_replace('/\/.*\/static\/ads\/.*.html/','', $page);
