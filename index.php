@@ -1,6 +1,6 @@
 <?php
-  $get = $_GET['load'];
-  if(strpos($_GET['load'],'/language/') !== false) {
+  $get = isset($_GET['load']) ? $_GET['load'] : '';
+  if(strpos(isset($_GET['load']) ? $_GET['load'] : '','/language/') !== false) {
     $loadurl = file_get_contents("home.html");
     echo($loadurl);
     exit;
