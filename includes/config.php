@@ -4,7 +4,7 @@
 
   # Add your custom code before the body (e.g. Google Analytics)
   $footerCode = <<<EOT
-<!-- <a href="https://proxybay.tv">More Pirate Bay Proxies</a><br> -->
-<!-- <a href="https://proxybay.tv/setup.html">Set up your own proxy</a><br> -->
+<!-- <a href="https://proxybay.one">More Pirate Bay Proxies</a><br> -->
+<!-- <a href="https://proxybay.one/setup.html">Set up your own proxy</a><br> -->
 EOT;
 ?>
