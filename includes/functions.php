@@ -12,7 +12,7 @@ function remove_bloat($page, $footerCode = ''){
   $page = str_replace('href="/?load=https','href="https', $page);
   $page = str_replace('<a href="/?load=/rss" class="rss" title="RSS"><img src="/static/img/rss_small.gif" alt="RSS"/></a>','',$page);
   $page = str_replace('/css-new/','/css/', $page);
-  $page = str_replace('<a href="/?load=/login" title="Login">Login</a> |','<b><a href="https://proxybay.la" title="More Pirate Bay Proxies" target="_blank">Proxy List</a></b> |', $page);
+  $page = str_replace('<a href="/?load=/login" title="Login">Login</a> |','<b><a href="https://proxybay.one" title="More Pirate Bay Proxies" target="_blank">Proxy List</a></b> |', $page);
   $page = str_replace('<a href="/?load=/register" title="Register">Register</a> |','', $page);
   $page = str_replace('<a href="/?load=/language" title="Select language">Language / Select language</a> |','', $page);
   $page = str_replace("</body>","$footerCode </body>", $page);
