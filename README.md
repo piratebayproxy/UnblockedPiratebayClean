@@ -12,9 +12,9 @@ The script uses the PHP curl function to load The Pirate Bay website and modifie
 
 One downside of the script is that it prepends the `?load=` query string for the pages and all internal links.
 
-Therefore, the URL's will be shown as https://domain.com/?load=/torrent/ whereas normally it would be something like https://domain.com/torrent/
+Therefore, the URL's will be shown as https://example.com/?load=/torrent/ whereas normally it would be something like https://example.com/torrent/
 
-If you prefer the URL's to stay the same as the original site you can try the alternate PHP script or the more advanced NGINX method, see [https://proxybay.one/setup.html](https://proxybay.one/setup.html).
+If you prefer the URL's to stay the same as the original site you can try the alternate PHP script or the more advanced NGINX method, see [https://proxybay.bz/setup.html](https://proxybay.bz/setup.html).
 
 How to use
 ----------
