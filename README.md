@@ -14,7 +14,7 @@ One downside of the script is that it prepends the `?load=` query string for the
 
 Therefore, the URL's will be shown as https://example.com/?load=/torrent/ whereas normally it would be something like https://example.com/torrent/
 
-If you prefer the URL's to stay the same as the original site you can try the alternate PHP script or the more advanced NGINX method, see [https://proxybay.dev/setup.html](https://proxybay.dev/setup.html).
+If you prefer the URL's to stay the same as the original site you can try the alternate PHP script or the more advanced NGINX method, see [https://proxybay.red/setup.html](https://proxybay.red/setup.html).
 
 How to use
 ----------
