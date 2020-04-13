@@ -1,5 +1,4 @@
 <?php
-  $mydomain = $_SERVER['HTTP_HOST'];
   $apiDomain = "https://apibay.org";
 
   function get_data($url) {
