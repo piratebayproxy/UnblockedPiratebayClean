@@ -14,7 +14,7 @@
 <b><font color="RED"><label id="jscrwarn">Enable JS in your browser!</label></font></b>
 <script>document.getElementById("jscrwarn").innerHTML='';</script>
 <b><font color="RED"><label id="jscrwarn2">Your adblock may block important javascript components, check that main.js is loaded or the webpage won't work.</label></font></b>
-<h1><label id="tlt"></label></h1>
+<h1>Details for: <label id="tlt"></label></h1>
 <div class="adblock" id="ad-top">
 <div class="ad728 align-center">
 </div>
@@ -27,19 +27,35 @@
 <section class="col-left ad120">
 </section>
 <section class="col-center">
-<ol id="torrents" class="view-single">
-<li class="list-header">
-<span class="list-item list-header item-type"><label onclick="sortlist(1);" title="Order by Category">Category</label></span>
-<span class="list-item list-header item-name"><label onclick="sortlist(2);" title="Order by Name">Name</label></span>
-<span class="list-item list-header item-uploaded"><label onclick="sortlist(3);" title="Order by Date Uploaded">Uploaded</label></span>
-<span class="list-item list-header item-icons">&nbsp;</span>
-<span class="list-item list-header item-size"><label onclick="sortlist(5);" title="Order by Size">Size</label></span>
-<span class="list-item list-header item-seed"><label onclick="sortlist(6);" title="Order by Seeders">SE</label></span>
-<span class="list-item list-header item-leech"><label onclick="sortlist(7);" title="Order by Leechers">LE</label></span>
-<span class="list-item list-header item-user"><label onclick="sortlist(8);" title="Order by ULed by">ULed by</label></span>
-</li>
-<script>if (typeof make_search !== "undefined" ) make_search();</script>
+<div id="description_container">
+<h2><label id="name"></label></h2>
+<div id="metadata">
+<dl id="meta-left" class="col-meta">
+<div><dt class="dt-sm">Type:</dt><dd><label id="cat"></label></dd></div>
+<div><dt class="dt-sm">Files:</dt><dd></dd></div>
+<div><dt class="dt-sm">Size:</dt><dd><label id="size"></label></dd></div>
+</dl>
+<dl id="meta-right" class="col-meta">
+<div><dt class="dt-md">Uploaded:</dt><dd><label id="uld"></label></dd></div>
+<div><dt class="dt-md">By:</dt><dd><label id="user"></label></dd></div>
+<div><dt class="dt-md">Seeders:</dt><dd><label id="s"></label></dd></div>
+<div><dt class="dt-md">Leechers:</dt><dd><label id="l"></label></dd></div>
+<div><dt class="dt-md">Info Hash:</dt><dd style="overflow-wrap: break-word; overflow: hidden;"><label id="ih"></label></dd></div>
+</dl>
+</div>
+<div class="links">
+<label id="d"></label>
+</div>
+<div id="description_text" class="text-box"><label id="descr"></label></div>
+<div class="links">
+<label id="d2"></label>
+</div>
+<div id="filelist" class="text-box">
+<ol>
+<script>if (typeof make_filelist !== "undefined" ) make_filelist();</script>
 </ol>
+</div>
+</div>
 </section>
 <section class="col-right ad120">
 </section>
@@ -52,6 +68,7 @@
 <div class="ad234 align-center">
 </div>
 </div>
+<script>if (typeof make_details !== "undefined" ) make_details();</script>
 </main>
 <header class="row">
 <section class="col-left" id="logo"><a href="/"><img src="/static/images/tpbsmall_notext.jpg" alt="The Pirate Bay"></a></section>
@@ -59,7 +76,7 @@
 <nav>
 <a href="/" title="Search Torrents"><strong>Search&nbsp;Torrents</strong></a> |
 <a href="/browse.php" title="Browse Torrents">Browse&nbsp;Torrents</a> |
-<a href="/search.php?q=top100:recent" title="Recent Torrent">Recent&nbsp;Torrents</a> |
+ <a href="/search.php?q=top100:recent" title="Recent Torrent">Recent&nbsp;Torrents</a> |
 <a href="/top.php" title="Top 100">Top&nbsp;100</a>
 </nav>
 <form action="/search.php">
@@ -69,7 +86,7 @@
     </script>
 <input value="Pirate Search" type="submit">
 <select name="cat" id="cat">
- <option value="0">All</option>
+<option value="0">All</option>
 <optgroup label="Audio">
 <option value="101">Music</option>
 <option value="102">Audio books</option>

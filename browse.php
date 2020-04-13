@@ -14,7 +14,7 @@
 <b><font color="RED"><label id="jscrwarn">Enable JS in your browser!</label></font></b>
 <script>document.getElementById("jscrwarn").innerHTML='';</script>
 <b><font color="RED"><label id="jscrwarn2">Your adblock may block important javascript components, check that main.js is loaded or the webpage won't work.</label></font></b>
-<h1><label id="tlt"></label></h1>
+<h1>Browse Torrents</h1>
 <div class="adblock" id="ad-top">
 <div class="ad728 align-center">
 </div>
@@ -27,19 +27,86 @@
 <section class="col-left ad120">
 </section>
 <section class="col-center">
-<ol id="torrents" class="view-single">
-<li class="list-header">
-<span class="list-item list-header item-type"><label onclick="sortlist(1);" title="Order by Category">Category</label></span>
-<span class="list-item list-header item-name"><label onclick="sortlist(2);" title="Order by Name">Name</label></span>
-<span class="list-item list-header item-uploaded"><label onclick="sortlist(3);" title="Order by Date Uploaded">Uploaded</label></span>
-<span class="list-item list-header item-icons">&nbsp;</span>
-<span class="list-item list-header item-size"><label onclick="sortlist(5);" title="Order by Size">Size</label></span>
-<span class="list-item list-header item-seed"><label onclick="sortlist(6);" title="Order by Seeders">SE</label></span>
-<span class="list-item list-header item-leech"><label onclick="sortlist(7);" title="Order by Leechers">LE</label></span>
-<span class="list-item list-header item-user"><label onclick="sortlist(8);" title="Order by ULed by">ULed by</label></span>
-</li>
-<script>if (typeof make_search !== "undefined" ) make_search();</script>
-</ol>
+<dl class="row">
+<div class="category_list">
+<div>
+<dt><a href="/search.php?q=category:100" title="Audio">Audio</a></dt>
+<dd>
+<a href="/search.php?q=category:101" title="Music">Music</a>
+<a href="/search.php?q=category:102" title="Audio books">Audio books</a>
+<a href="/search.php?q=category:103" title="Sound clips">Sound clips</a>
+<a href="/search.php?q=category:103" title="FLAC">FLAC</a>
+<a href="/search.php?q=category:199" title="Other">Other</a>
+</dd>
+</div>
+<div>
+<dt><a href="/search.php?q=category:200" title="Video">Video</a></dt>
+<dd>
+<a href="/search.php?q=category:201" title="Movies">Movies</a>
+<a href="/search.php?q=category:202" title="Movies DVDR">Movies DVDR</a>
+<a href="/search.php?q=category:203" title="Music videos">Music videos</a>
+<a href="/search.php?q=category:204" title="Movie clips">Movie clips</a>
+<a href="/search.php?q=category:205" title="TV shows">TV shows</a>
+<a href="/search.php?q=category:206" title="Handheld">Handheld</a>
+<a href="/search.php?q=category:207" title="HD - Movies">HD - Movies</a>
+<a href="/search.php?q=category:208" title="HD - TV shows">HD - TV shows</a>
+<a href="/search.php?q=category:209" title="3D">3D</a>
+<a href="/search.php?q=category:299" title="Other">Other</a>
+</dd>
+</div>
+<div>
+<dt><a href="/search.php?q=category:300" title="Applications">Applications</a></dt>
+<dd>
+<a href="/search.php?q=category:301" title="Windows">Windows</a>
+<a href="/search.php?q=category:302" title="Mac">Mac</a>
+<a href="/search.php?q=category:303" title="UNIX">UNIX</a>
+<a href="/search.php?q=category:304" title="Handheld">Handheld</a>
+<a href="/search.php?q=category:305" title="IOS (iPad/iPhone)">IOS (iPad/iPhone)</a>
+ <a href="/search.php?q=category:306" title="Android">Android</a>
+<a href="/search.php?q=category:399" title="Other OS">Other OS</a>
+</dd>
+</div>
+</div>
+<div class="category_list">
+<div>
+<dt><a href="/search.php?q=category:400" title="Games">Games</a></dt>
+<dd>
+<a href="/search.php?q=category:401" title="PC">PC</a>
+<a href="/search.php?q=category:402" title="Mac">Mac</a>
+<a href="/search.php?q=category:403" title="PSx">PSx</a>
+<a href="/search.php?q=category:404" title="XBOX360">XBOX360</a>
+<a href="/search.php?q=category:405" title="Wii">Wii</a>
+<a href="/search.php?q=category:406" title="Handheld">Handheld</a>
+<a href="/search.php?q=category:407" title="IOS (iPad/iPhone)">IOS (iPad/iPhone)</a>
+<a href="/search.php?q=category:408" title="Android">Android</a>
+<a href="/search.php?q=category:499" title="Other">Other</a>
+</dd>
+</div>
+<div>
+<dt><a href="/search.php?q=category:500" title="Porn">Porn</a></dt>
+<dd>
+<a href="/search.php?q=category:501" title="Movies">Movies</a>,
+<a href="/search.php?q=category:502" title="Movies DVDR">Movies DVDR</a>
+<a href="/search.php?q=category:503" title="Pictures">Pictures</a>
+<a href="/search.php?q=category:504" title="Games">Games</a>
+<a href="/search.php?q=category:505" title="HD - Movies">HD - Movies</a>
+<a href="/search.php?q=category:506" title="Movie clips">Movie clips</a>
+<a href="/search.php?q=category:599" title="Other">Other</a>
+</dd>
+</div>
+<div>
+<dt><a href="/search.php?q=category:600" title="Other">Other</a></dt>
+<dd>
+<a href="/search.php?q=category:601" title="E-books">E-books</a>
+<a href="/search.php?q=category:602" title="Comics">Comics</a>
+<a href="/search.php?q=category:603" title="Pictures">Pictures</a>
+<a href="/search.php?q=category:604" title="Covers">Covers</a>
+<span><a href="/search.php?q=category:605" title="Physibles">Physibles</a><a href=""><b>(?!)</b></a></span>
+<a href="/search.php?q=category:699" title="Other">Other</a>
+</dd>
+</div>
+</div>
+</dl>
 </section>
 <section class="col-right ad120">
 </section>
@@ -69,7 +136,7 @@
     </script>
 <input value="Pirate Search" type="submit">
 <select name="cat" id="cat">
- <option value="0">All</option>
+<option value="0">All</option>
 <optgroup label="Audio">
 <option value="101">Music</option>
 <option value="102">Audio books</option>
