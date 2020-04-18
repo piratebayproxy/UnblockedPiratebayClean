@@ -29,6 +29,5 @@
 print_footer();
 mark_selected();
 </script>
-<script src="/a.js"></script>
 </body>
 </html>
