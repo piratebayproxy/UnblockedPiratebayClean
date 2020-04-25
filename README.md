@@ -14,4 +14,4 @@ Install
 
 To install it, you will need to upload the files to a web server which supports PHP and the PHP Curl library.
 
-Afterwards, you can request to have your proxy site added to our list at: [https://proxybay.onl](https://proxybay.onl)
+Afterwards, you can request to have your proxy site added to our list at: [https://proxybay.page](https://proxybay.page)
