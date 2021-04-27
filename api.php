@@ -18,7 +18,7 @@
     return $data;
   }
 
-  $get = isset($_GET['url']) ? $_GET['url'] : '';
+  $get = isset($_GET['url']) ? str_replace('/api.php?url=','',$_SERVER['REQUEST_URI']) : '';
   echo(get_data("$apiDomain$get"));
   exit;
 ?>
