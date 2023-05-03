@@ -44,9 +44,9 @@
 <input type="hidden" name="page" value="0">
 <input type="hidden" name="orderby" value="">
 <span style="font-size: 13px;line-height: 20px;border: 0;text-decoration: none;color: #009;">
-<strong><a href="https://proxy-bay.biz/" title="List of Pirate Bay proxies">More Pirate Bay Proxies</a></strong>
+<strong><a href="https://proxy-bay.click/" title="List of Pirate Bay proxies">More Pirate Bay Proxies</a></strong>
 <br>
-<strong><a href="https://proxy-bay.biz/setup.html" title="Create your own proxy">Create your own proxy</a></strong>
+<strong><a href="https://proxy-bay.click/setup.html" title="Create your own proxy">Create your own proxy</a></strong>
 </span>
 </form>
 </div>
