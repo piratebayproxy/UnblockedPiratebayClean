@@ -16,7 +16,7 @@ To install it, you will need to upload the files to a web server which supports 
 
 To add your own custom code (e.g. Google Analytics) simply edit the PHP files (not api.php).
 
-Afterwards, you can request to have your proxy site added to our list at: [https://proxybay.unblockit.africa](https://proxybay.unblockit.africa)
+Afterwards, you can request to have your proxy site added to our list at: [https://proxybay.unblockit.casa](https://proxybay.unblockit.casa)
 
 How it works
 ============
